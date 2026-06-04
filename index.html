@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Widget Integration</title>
-<!-- Widget Configuration -->
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-</head> 
+</head>
 <body>
 
 <script>
@@ -16,23 +14,23 @@
             route: 'general'
         },
         branding: {
-            logo: 'YOUR_LOGO_URL',
-            name: 'Your Company Name',
+            logo: 'https://customcx.com/logo.png',
+            name: 'CustomCX Support',
             welcomeText: 'Hi 👋, how can we help?',
             responseTimeText: 'We typically respond right away'
         },
         style: {
-            primaryColor: '#854fff',
-            secondaryColor: '#6b3fd4',
-            position: 'right', // 'left' or 'right'
+            primaryColor: '#10b981',
+            secondaryColor: '#059669',
+            position: 'right',
             backgroundColor: '#ffffff',
-            fontColor: '#333333',
-          
+            fontColor: '#333333'
         }
     };
 </script>
 
-<!-- Widget Script -->
-<script src="https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/chat-widget.js"></script>
+<!-- Points to YOUR edge function, not jsdelivr -->
+<script src="/widget/latest.js"></script>
+
 </body>
 </html>
